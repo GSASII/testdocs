@@ -6,10 +6,6 @@
 Welcome to some sample documentation
 ====================================
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
-
 Source
 ----------
 
@@ -29,9 +25,19 @@ More math, but embedded
 {math}`d^* = \sqrt {A_0 h^2 + A_1 k^2 + A_2 l^2 + A_3 hk + A_4 hl + A_5 kl}`
 in a line of text. 
 
-   
+
 More stuff
 -----------
+   
+More math, but embedded
+:math:`d^* = \sqrt {A_0 h^2 + A_1 k^2 + A_2 l^2 + A_3 hk + A_4 hl + A_5 kl}`, 
+in a line of text. 
+
+
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
 	     
    some-feature.md
    another-feature.md
