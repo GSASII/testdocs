@@ -22,13 +22,14 @@ jobs:
 #        id: pages
 #        uses: actions/configure-pages@v
 
-       # - uses: actions/setup-python@v3
-       # - name: Install dependencies
-       #   run: |
-       #     pip install sphinx sphinx_rtd_theme sphinxnotes.strike
-       # - name: Sphinx build
-       #   run: |
-       #     sphinx-build doc _build
+      - name: Sphinx setup
+        uses: actions/setup-python@v3
+      - name: Install dependencies
+        run: |
+          pip install sphinx sphinx_rtd_theme sphinxnotes.strike
+      - name: Sphinx build
+        run: |
+          sphinx-build doc _build
         
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
