@@ -30,7 +30,13 @@ jobs:
       - name: Sphinx build
         run: |
           sphinx-build webdocs .
-        
+###############
+# get GSAS-II code
+      - name: Get GSAS-II
+        run: |
+          git clone --depth 1 https://github.com/AdvancedPhotonSource/GSAS-II.git _gsas2
+          mv _gsas2/GSASII/help ./help
+          
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
